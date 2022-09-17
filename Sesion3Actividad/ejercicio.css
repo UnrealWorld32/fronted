@@ -1,0 +1,62 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos, ya que son imprescindibles para
+   que la pÃ¡gina se vea correctamente.
+   ================================================================== */
+ 
+/*-- BÃ¡sico ----------------------------------------------------------*/
+ul, ul li { margin: 0; padding: 0; list-style: none; }
+h1, h2, h3, p, form { margin: 0; padding: 0; }
+.clear { clear: both; }
+img { border: none; margin: 0.5em; }
+ 
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: auto;
+}
+ 
+#menu { border-bottom: solid 1px #004c99; background-image: url(fondo_menu.gif); margin-right: 1em; }
+#menu a { color: white; font-size: 1.3em; }
+#noticias { border: solid 1px #c5c5c5; }
+#publicidad { border: dashed 1px #c60; background-color: #fff6cd; }
+#secundario { border: solid 1px #c60; }
+#noticias, #pie { background-color: #f8f8f8; }
+#secundario h2 { background-color: #db905c; padding: 0.2em; }
+p, li { color: black; font-family: Arial, sans-serif; font-size: 0.9em; letter-spacing: 1.4; }
+.articulo h2 { color: #c60; font-size: 1.6em; letter-spacing: 1.2; margin-bottom: 0.3em; }
+ 
+#cabecera { clear: both; padding: 1em; }
+#menu { clear: both; padding: 0.5em; margin-bottom: 0.5em; }
+#lateral { float: left; width: 20%; font-size: 0.9em; text-align: justify; }
+#lateral #noticias p { color: #999; }
+#noticias h3 a { color: #036; }
+#contenido { float: right; width: 78%; }
+/*Cambio no pedido*/#contenido #principal { float: left; width: 74%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; padding: 0.5em 0 0.5em 0; border-top: solid 1px #c5c5c5; border-bottom: solid 1px #c5c5c5; }
+
+#noticias, #publicidad, #principal, #secundario { padding: 0.5em; }
+.articulo { padding: 1em; }
+#publicidad { margin-top: 1em; }
+ 
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+ 
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li { display: inline; float: left; }
+ 
+/*-- SecciÃ³n Principal -----------------------------------------------*/
+#contenido #principal .articulo img { width: 100px; float: left; }
+ 
+/*-- Pie de pÃ¡gina ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+#pie {margin-top: 1em; }
+ 
+/* === IMPORTANTE ===================================================
+   A partir de aquÃ­, se pueden aÃ±adir todos los estilos propios que 
+   sean necesarios.
+   ================================================================== */
