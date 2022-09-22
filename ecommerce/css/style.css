@@ -1,0 +1,12 @@
+#navegacion ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 20em 2em 20em;
+    list-style: none;
+}
+
+#navegacion ul li{
+    margin: 0 10 px;
+}
+
+/* >* - pa cada uno */
