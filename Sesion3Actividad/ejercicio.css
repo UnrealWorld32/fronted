@@ -39,7 +39,7 @@ p, li { color: black; font-family: Arial, sans-serif; font-size: 0.9em; letter-s
 
 #noticias, #publicidad, #principal, #secundario { padding: 0.5em; }
 .articulo { padding: 1em; }
-#publicidad { margin-top: 1em; }
+#lateral #publicidad { margin-top: 1em; }
  
 /*-- Cabecera --------------------------------------------------------*/
 #cabecera #logo { float: left; }
@@ -60,3 +60,11 @@ p, li { color: black; font-family: Arial, sans-serif; font-size: 0.9em; letter-s
    A partir de aquÃ­, se pueden aÃ±adir todos los estilos propios que 
    sean necesarios.
    ================================================================== */
+
+   body{
+      font: 0.9em/1.4 Arial, Helvetica, sans-serif;
+   }
+
+   #menu #menu_principal li{
+      margin: 0 1em 0 1em;
+   }
