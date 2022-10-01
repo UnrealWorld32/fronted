@@ -9,6 +9,189 @@
     color: #fff;
 }
 
+.navbar .flex{
+    align-content: center;
+    height: 100%;
+}
+
+.navbar h1{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.navbar a{
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+}
+
+.navbar a:hover{
+    color: #9867C5;
+    border-bottom: 3px solid #9867C5;
+}
+
+.showcase{
+    height: 300px;
+    background-color: purple;
+}
+
+.showcase p{
+    margin-bottom: 30px;
+}
+
+.grid{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: 60% 40%;
+}
+
+.grid-item-1, .grid-item-2{
+    position: relative;
+    padding-top: 50px;
+}
+
+input[type=email]{
+    padding: 10px 70px 10px 0;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+}
+
+input[type=submit]{
+    border-radius: 6px;
+    padding: 10px 20px;
+    background-color: #9867C5;
+    border: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.showcase-form{
+    padding-left: 7px;
+    margin: auto;
+}
+
+.little-info{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+.grid-item-2 .image img{
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.lower-container{
+    margin: 120px auto;
+    padding: 0;
+    max-width: 1400px;
+}
+
+.lower-container .stats{
+    padding: 45px 50px;
+    text-align: center;
+}
+
+.lower-container .stat{
+    margin: 0 30px;
+    text-align: center;
+    width: 800px;
+}
+
+.lower-container .flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lower-container .title{
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 0 0 10px;
+}
+
+.lower-container .text{
+    color: black;
+    font-size: 19px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 20px;
+    text-align: justify;
+}
+
+.testimonials{
+    padding: 40px;
+    color: black;
+}
+
+.grid-3{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -7px -7px 7px rgba(0, 0, 0, 0.2), 7px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.circle{
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid purple;
+    height: 90px;
+    position: relative;
+    top: -30px;
+    left: 120px;
+    border-radius: 50%;
+    /*-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;*/
+    width: 90px;
+}
+
+.testimonials p{
+    color: black;
+}
+
+.testimonials img{
+    border-radius: 50%;
+    height: 100%;
+    clip-path: circle();
+}
+
+.testimonials h3{
+    text-align: center;
+    color: black;
+}
+
+footer{
+    background-color: purple;
+    padding: 20px 10px;
+    margin: 0 10px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #9867C5;
+    border-bottom: 2px solid #9867C5;
+}
+
+li{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    list-style-type: none;
+}
+
 a{
     color: #000;
     text-decoration: none;
@@ -19,7 +202,6 @@ h1{
     height: 600;
     margin: 10px 0;
     line-height: 1.2;
-    color: orange;
 }
 
 h2{
@@ -27,17 +209,86 @@ h2{
     height: 300;
     margin: 10px 0;
     line-height: 1.2;
-    color: orangered;
 }
 
 p{
-    padding: 30px;
+    padding: 20px;
     font-size: 20px;
     margin: 10px 0;
-    color: cyan;
 }
 
 img{
-    object-fit: cover;
+    /*object-fit: cover;*/
+    width: 100%;
 }
-/* Classes */
+
+.container{
+    max-width: 1200px;
+    overflow: visible;
+    margin: 0 auto;
+}
+
+.navbar{
+    background-color: purple;
+    height: 70px;
+    padding: 0 30px;
+}
+
+/* Esto puede salir mal */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+}
+
+.flex ul{
+    display: flex;
+}
+
+/*  Tablets  */
+@media(max-width: 768px){
+    .grid, .grid-3{
+        grid-template-columns: 1fr;
+    }
+
+    .stat .flex{
+        flex-direction: column;
+    }
+    .stats{
+        text-align: center;
+    }
+    .image{
+        width: 600px;
+        margin-left: 80px;
+    }
+    .stat{
+        width: 100%;
+        padding-right: 80px;
+    }
+    .circle{
+        height: 90px;
+        top: -30px;
+        right: 270px;
+        width: 90px;
+    }
+    .showcase{
+        height: auto;
+    }
+}
+
+@media(max-width: 500px){
+    .navbar{
+        height: 100px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+    }
+    .navbar a:hover{
+        color: white;
+        border-bottom: 2px solid black;
+    }
+    .image{
+        width: 350px;
+    }
+}
