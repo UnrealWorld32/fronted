@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
@@ -29,8 +30,20 @@
 
     <div class="hero-image"></div>
 
-    <main>
+    <main class="container-xl py-5">
         <h2>Nuestros Productos</h2>
+
+        <div class="row g-0 pt-5 md4">
+            <div class="col-md-8 producto">
+                <img class="img-fluid" src="img/producto1.jpg">
+            </div>
+            <div class="col-md-4 bg-primary text-center p-5 text-white d-flex flex-column justify-content-center">
+                <h3>Producto 1</h3>
+                <p>Una foto muy bonita</p>
+                <p class="fs-1 fw-bold">$7,000,000.00</p>
+                <a class="btn btn-success" href="#">Agregar al carrito</a>
+            </div>
+        </div>
 
         <!--  Contenedor 1  -->
         <div id="contenedor1">
@@ -39,7 +52,8 @@
                 <h3>Producto 1</h3>
                 <p class="texto">Una foto muy bonita</p>
                 <p class="precio">$7,000,000.00</p>
-                <button>Agregar al carrito</button>
+                <!--<button href="#">Agregar al carrito</button>-->
+                <a class="btn btn-success" href="#">Agregar al carrito</a>
             </div>
         </div>
 
@@ -53,7 +67,7 @@
                 <h3>Producto 2</h3>
                 <p class="texto">Otra foto muy bonita</p>
                 <p class="precio">$7,000,000.00</p>
-                <button>Agregar al carrito</button>
+                <button href="#">Agregar al carrito</button>
             </div>
 
             <div id="imagen3">
@@ -63,7 +77,7 @@
                 <h3>Producto 3</h3>
                 <p class="texto">Esta está muy fea, no la compres</p>
                 <p class="precio">$0.01</p>
-                <button>Agregar al carrito</button>
+                <button href="#">Agregar al carrito</button>
             </div>
         </div>
 
@@ -77,7 +91,7 @@
                 <h3>Producto 4</h3>
                 <p class="texto">Otra foto muy bonita, pero el que la tomó me cae mal</p>
                 <p class="precio">$0.10</p>
-                <button>Agregar al carrito</button>
+                <button href="#">Agregar al carrito</button>
             </div>
 
             <div id="imagen5">
@@ -87,7 +101,7 @@
                 <h3>Producto 5</h3>
                 <p class="texto"><i>Inserte texto aquí</i></p>
                 <p class="precio">N/A</p>
-                <button>Agregar al carrito</button>
+                <button href="#">Agregar al carrito</button>
             </div>
 
 
@@ -98,7 +112,7 @@
                 <h3>Producto 6</h3>
                 <p class="texto">Foto muy bonita<br>(foto no incluida)</p>
                 <p class="precio">$7,000,000,000,000.00</p>
-                <button>Agregar al carrito</button>
+                <button href="#">Agregar al carrito</button>
             </div>
         </div>
 
@@ -107,56 +121,57 @@
 
     <h2>Categorías de Productos</h2>
 
-    <div class="row">
-        <div class="column">
+    <div class="contenedor4">
+        <div class="categoria1">
             <a href="#"><img src="img\categoria1.jpg"></a>
         </div>
-        <div class="column">
+        <a class="catdesc1 catdesc" href="#">
+            <p>Categoría 1</p>
+        </a>
+
+        <div class="categoria2">
             <a href="#"><img src="img\categoria2.jpg"></a>
         </div>
-        <div class="column">
+        <a class="catdesc2 catdesc" href="#">
+            <p>Categoría 2</p>
+        </a>
+
+        <div class="categoria3">
             <a href="#"><img src="img\categoria3.jpg"></a>
         </div>
+        <a class="catdesc3 catdesc" href="#">
+            <p>Categoría 3</p>
+        </a>
     </div>
 
-    <footer>
-        <div class="descripcion">
-            <div class="column">
-                <h3>Categorías</h3>
-                <nav>
-                    <ul>
-                        <li>Cocina</li>
-                        <li>Oficina</li>
-                        <li>Jardín</li>
-                        <li>Cochera</li>
-                        <li>Dormitorios</li>
-                    </ul>
-                </nav>
-            </div>
+    <footer class="border-top mt-5 pt-5">
+        <div class="container-xl mt-5">
+            <div id="pies" class="">
+                <ul class="pie">
+                    <li class="cabeza" href="#">Categorías</li>
+                    <li href="#">Cocina</li>
+                    <li href="#">Oficina</li>
+                    <li href="#">Jardín</li>
+                    <li href="#">Cochera</li>
+                    <li href="#">Dormitorios</li>
+                </ul>
 
-            <div class="column">
-                <h3>Sobre nosotros</h3>
-                <nav>
-                    <ul>
-                        <li>Nuestra historia</li>
-                        <li>Misión</li>
-                        <li>Visión y Valores</li>
-                        <li>Carrera</li>
-                        <li>Políticas de privacidad</li>
-                        <li>Términos del servicio</li>
-                    </ul>
-                </nav>
-            </div>
+                <ul class="pie">
+                    <li class="cabeza" href="#">Sobre nosotros</li>
+                    <li href="#">Nuestra historia</li>
+                    <li href="#">Misión</li>
+                    <li href="#">Visión y Valores</li>
+                    <li href="#">Carrera</li>
+                    <li href="#">Políticas de privacidad</li>
+                    <li href="#">Términos del servicio</li>
+                </ul>
 
-            <div class="column">
-                <h3>Soporte</h3>
-                <nav>
-                    <ul>
-                        <li>Preguntas frecuentes</li>
-                        <li>Ayuda en línea</li>
-                        <li>Confianza y seguridad</li>
-                    </ul>
-                </nav>
+                <div class="pie">
+                    <li class="cabeza" href="#">Soporte</li>
+                    <li href="#">Preguntas frecuentes</li>
+                    <li href="#">Ayuda en línea</li>
+                    <li href="#">Confianza y seguridad</li>
+                </div>
             </div>
         </div>
     </footer>

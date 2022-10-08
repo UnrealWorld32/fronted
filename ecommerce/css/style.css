@@ -42,7 +42,7 @@ img{
     margin: 0 10 px;
 }
 
-button{
+/*button{
     width: 20rem;
     align-self: center;
     background-color: #89BD00;
@@ -52,7 +52,7 @@ button{
     border: 3px solid #54ad00;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
-}
+}*/
 
 .descripcion{
     color: white;
@@ -60,6 +60,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 
 /*  Contenedor 1 */
@@ -170,4 +171,92 @@ button{
     grid-row: 2 / 4;
     border: none;
     border-radius: 1rem 1rem 0 0;
+}
+
+/*  Contenedeor 4  */
+.contenedor4{
+    display: grid;
+    margin: 1.5rem 8%;
+    width: 84%;
+    height: 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90% 10%;
+    grid-gap: 0.5rem;
+}
+
+.contenedor4 img{
+    border: none;
+    border-radius: 1.5rem;
+}
+
+.catdesc{
+    background-color: rgba(80, 80, 80, 0.85);
+    border: none;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.catdesc p{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.categoria1{
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.catdesc1{
+    grid-column: 1;
+    grid-row: 2 / 4;
+}
+
+.categoria2{
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.catdesc2{
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+.categoria3{
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+.catdesc3{
+    grid-column: 3;
+    grid-row: 2 / 4;
+}
+
+/*  Footer  */
+#pies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pies *{
+    text-align: center;
+}
+
+.cabeza{
+    font-size: 2rem;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+/*  Productos  */
+@media(min-width: 768px){
+    .producto img{
+        height: 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
 }
