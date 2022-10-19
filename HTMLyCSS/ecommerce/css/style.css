@@ -1,0 +1,91 @@
+/*  Generales  */
+h1, h2, h3, .precio, p{
+    text-align: center;
+}
+
+h2{
+    padding-top: 5rem;
+}
+
+h3{
+    font-size: 2rem;
+    margin: 0;
+}
+
+span{
+    color: #037BC0;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    line-height: 2;
+}
+
+img{
+    width: 100%;
+    overflow: hidden;
+}
+
+#navegacion ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 20em 2em 20em;
+    list-style: none;
+}
+
+#navegacion ul li{
+    margin: 0 10 px;
+}
+
+#pies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pies *{
+    text-align: center;
+}
+
+.cabeza{
+    font-size: 2rem;
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+/*  Productos  */
+@media(min-width: 768px){
+    .producto1 img{
+        height: 45rem;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media(min-width: 768px){
+    .producto2 img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .explicacion2{
+        height: 20rem;
+    }
+}
+
+@media(min-width: 768px){
+    .producto3 img{
+        height: 16rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .explicacion3{
+        height: 16rem;
+    }
+}

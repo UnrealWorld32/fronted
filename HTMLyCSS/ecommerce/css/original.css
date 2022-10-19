@@ -3,6 +3,10 @@ h1, h2, h3, .precio, p{
     text-align: center;
 }
 
+h2{
+    padding-top: 5rem;
+}
+
 h3{
     font-size: 2rem;
     margin: 0;
@@ -254,9 +258,33 @@ img{
 
 /*  Productos  */
 @media(min-width: 768px){
-    .producto img{
+    .producto1 img{
         height: 45rem;
         width: 100%;
         object-fit: cover;
+    }
+}
+
+@media(min-width: 768px){
+    .producto2 img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .explicacion2{
+        height: 20rem;
+    }
+}
+
+@media(min-width: 768px){
+    .producto3 img{
+        height: 16rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .explicacion3{
+        height: 16rem;
     }
 }
