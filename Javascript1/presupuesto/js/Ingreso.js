@@ -8,6 +8,7 @@ class Ingreso extends Dato{
     static _id;
 
     get id(){
-        return _id.get(this).id;
+        //return _id.get(this).id;
+        return this._id;
     }
 }

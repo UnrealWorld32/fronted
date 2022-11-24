@@ -8,7 +8,7 @@
         <div class="presupuesto_titulo">Presupuesto Disponible</div>
         <div class="presupuesto_valor" id="presupuesto">+2,000.00</div>
         <div class="presupuesto_ingreso limpiarEstilos">
-            <div class="prespuesto_ingreso--texto">Ingresos</div>
+            <div class="presupuesto_ingreso--texto">Ingresos</div>
             <div class="derecha">
                 <div class="presupuesto_ingreso--valor" id="ingresos">+4,000.00</div>
                 <div class="presupuesto_ingreso--porcentaje"> </div>
@@ -30,15 +30,14 @@
         <div class="agregar">
             <div class="agregar_contenedor">
                 <select class="agregar_tipo" id="tipo">
-                    <option value="Ingreso" selected>+</option>
+                    <option value="Ingreso">+</option>
                     <option value="Egreso">-</option>
                 </select>
                 <input type="text" class="agregar_descripcion" id="descripcion" placeholder="Agregar descripción">
                 <input type="number" class="agregar_valor" id="valor" placeholder="Valor" step="any">
-                <input>
-                <button class="agregar_btn">
-                    <ion-icon name="checkmark-circle-outline"></ion-icon>
-                </button>
+                <div class="agregar_btn">
+                    <ion-icon name="checkmark-circle-outline" onclick="validarInput()"></ion-icon>
+                </div>
             </div>
         </div>
     </form>
