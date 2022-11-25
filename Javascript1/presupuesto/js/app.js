@@ -1,6 +1,6 @@
 var ingresos = [
-    Salario = 20000,
-    VentaAuto = 50000
+    {Salario: 20000},
+    {VentaAuto: 50000}
 ]
 
 var egresos = [
@@ -59,7 +59,10 @@ var agregar = () => {
         valor: valor.val()
     };
     (tipo === 'Ingreso') ? ingresos.push(nuevo) : egresos.push(nuevo);
+    console.log(totalIngresos(ingresos[0]));
     console.log(totalIngresos(ingresos[1]));
+    console.log(totalIngresos(ingresos[2]));
+    console.log(tipo);
 }
 
 //  Toma de riesgos
